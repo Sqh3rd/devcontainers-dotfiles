@@ -1,0 +1,7 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devontainers-extra/features/mise": {},
+    "ghcr.io/devontainers-extra/features/neovim": {}
+  }
+}

@@ -1,0 +1,4 @@
+[tools]
+fzf = "latest"
+lazygit = "latest"
+ripgrep = "latest"
