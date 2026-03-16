@@ -1,4 +1,8 @@
 [tools]
+neovim = "latest"
 fzf = "latest"
 lazygit = "latest"
 ripgrep = "latest"
+
+[settings]
+auto_install = true

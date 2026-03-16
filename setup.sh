@@ -1,10 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env bash
 set -euo pipefail
 
-if [ ! -d "~/.config/nvim" ]; then 
-  echo "Cloning neovim config..."
-  git clone git@github.com:Sqh3rd/nvim-config.git "~/.config/nvim"
-fi
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-echo "Installing neovim plugins..."
-nvim --headless "+Lazy! sync" +qa || true
+echo "Starting dotfiles install..."
+
+source "$DOTFILES_DIR/scripts/mise.sh"
+source "$DOTFILES_DIR/scripts/nvim.sh"
