@@ -3,8 +3,8 @@ set -euo pipefail
 
 echo "Move mise config"
 
-mkdir -p "/etc/mise/"
-mv "$DOTFILES_DIR/.mise.toml" "/etc/mise/config.toml"
+sudo mkdir -p "/etc/mise/"
+sudo mv "$DOTFILES_DIR/.mise.toml" "/etc/mise/config.toml"
 
 echo "Install mise"
 
@@ -14,4 +14,4 @@ eval "$(~/.local/bin/mise activate bash)"
 echo "Install tools via mise"
 
 mise trust "$DOTFILES_DIR/.mise.toml"
-mise install --cd "$DOTFILES_DIR"
+mise install
