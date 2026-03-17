@@ -13,6 +13,4 @@ eval "$(~/.local/bin/mise activate bash)"
 
 echo "Install tools via mise"
 
-export MISE_SHIMS_DIR="/usr/local/bin"
-
-sudo mise install --system
+mise install --system
