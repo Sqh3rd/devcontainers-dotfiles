@@ -5,4 +5,5 @@ lazygit = "latest"
 ripgrep = "latest"
 
 [settings]
-auto_install = true
+raw = true
+experimental = true
