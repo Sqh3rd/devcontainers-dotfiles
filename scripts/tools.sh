@@ -13,7 +13,8 @@ PACKAGES=(
 )
 
 echo "Setup apt"
-sudo apt-get install software-properties-common
+sudo apt update -y
+sudo apt install software-properties-common
 
 echo "Setup apt repos"
 sudo add-apt-repository -y ppa:neovim-ppa/stable
