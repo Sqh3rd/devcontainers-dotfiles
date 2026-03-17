@@ -8,9 +8,10 @@ sudo mv "$DOTFILES_DIR/.mise.toml" "/etc/mise/config.toml"
 
 echo "Install mise"
 
-curl https://mise.run | sh
-eval "$(~/.local/bin/mise activate bash)"
+sudo add-apt-repository -y ppa:jdxcode/mise
+sudo apt update -y
+sudo apt install -y mise
 
 echo "Install tools via mise"
 
-mise install --system
+sudo mise install --system
