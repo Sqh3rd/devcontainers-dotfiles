@@ -1,9 +1,0 @@
-[tools]
-neovim = "latest"
-fzf = "latest"
-lazygit = "latest"
-ripgrep = "latest"
-
-[settings]
-raw = true
-experimental = true
