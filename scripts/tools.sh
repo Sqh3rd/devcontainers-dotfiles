@@ -4,7 +4,6 @@ set -euo pipefail
 PACKAGES=(
   mise
 
-  neovim
   ripgrep
   fzf
 )
