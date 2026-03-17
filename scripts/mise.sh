@@ -3,8 +3,8 @@ set -euo pipefail
 
 echo "Move mise config"
 
-mkdir -p "~/.config/mise"
-mv "$DOTFILES_DIR/.mise.toml" "~/.config/mise/config.toml"
+mkdir -p "/etc/mise/"
+mv "$DOTFILES_DIR/.mise.toml" "/etc/mise/config.toml"
 
 echo "Install mise"
 
