@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+echo "Move mise config"
+
+mv ./../.mise.toml ~/.config/mise/config.toml
+
 echo "Install mise"
 
 curl https://mise.run | sh
